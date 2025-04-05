@@ -29,8 +29,8 @@ A simple Flask-based web application that allows users to register, log in, uplo
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/image-sharing-app.git
-cd image-sharing-app
+git clone https://github.com/Owskar/Basic_Photo_Gallery.git
+cd Basic_Photo_Gallery
 ```
 
 2. Create a virtual environment
