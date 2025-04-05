@@ -1,0 +1,11 @@
+<!-- templates/home.html -->
+{% extends "layout.html" %} {% block content %}
+<h2>Welcome to Image Sharing App</h2>
+{% if session.user_id %}
+<p>Hello, {{ session.username }}! You are logged in.</p>
+{% else %}
+<p>
+  Please <a href="{{ url_for('login') }}">login</a> or
+  <a href="{{ url_for('register') }}">register</a> to continue.
+</p>
+{% endif %} {% endblock %}

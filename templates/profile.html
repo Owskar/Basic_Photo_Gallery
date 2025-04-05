@@ -1,0 +1,9 @@
+<!-- templates/profile.html -->
+{% extends "layout.html" %} {% block content %}
+<h2>Your Profile</h2>
+<p><strong>Username:</strong> {{ user[1] }}</p>
+<p><strong>Email:</strong> {{ user[3] }}</p>
+<p>
+  <a href="{{ url_for('change_password') }}" class="btn">Change Password</a>
+</p>
+{% endblock %}

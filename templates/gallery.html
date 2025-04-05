@@ -1,0 +1,17 @@
+<!-- templates/gallery.html -->
+{% extends "layout.html" %} {% block content %}
+<h2>Your Image Gallery</h2>
+<div class="gallery">
+  {% if images %} {% for image in images %}
+  <div>
+    <img
+      src="{{ url_for('static', filename='uploads/' + image[2]) }}"
+      alt="User uploaded image"
+    />
+  </div>
+  {% endfor %} {% else %}
+  <p>You haven't uploaded any images yet.</p>
+  {% endif %}
+</div>
+<p><a href="{{ url_for('upload') }}" class="btn">Upload New Image</a></p>
+{% endblock %}
